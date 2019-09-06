@@ -1,5 +1,5 @@
 if(process.env.NODE_ENV === 'production') {
-    module.exports = {mongoURI :'mongodb://thilak:thilakal123@ds317808.mlab.com:17808/venussympi'}
+    module.exports = {mongoURI :process.env.MONGO_URI}
 }else{
     module.exports = {mongoURI :'mongodb://localhost/sympo'}
 }
