@@ -28,8 +28,10 @@ app.use(express.urlencoded({extended: true}))
 // //    });
 // res.send('the god praveen');
 // });
-
-app.post('/', (req,res) => {
+app.get("/",(req,res)=>{
+res.send("hi")
+})
+app.post('/register', (req,res) => {
    let newData = {
      name : req.body.name,
      collegeName : req.body.collegeName,
